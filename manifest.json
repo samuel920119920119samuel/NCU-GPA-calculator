@@ -2,22 +2,12 @@
   "name": "NCU-GPA calculator",
   "version": "0.9",
   "description": "A GPA calculator for National Central University students.",
-  "permissions": [
-    "activeTab",
-    "tabs"
-  ],
 
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
-
-  "browser_action": {
-    "default_icon": "logo16.png",
-    "default_title": "calculate your GPA"
-  },
-
-  // "options_page": "options.html",
+  // "browser_action": {
+  //   "default_icon": "logo16.png",
+  //   "default_title": "GPA requirement",
+  //   "default_popup": "popup.html"
+  // },
 
   "minimum_chrome_version": "14",
 

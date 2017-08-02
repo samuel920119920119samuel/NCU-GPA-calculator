@@ -25,7 +25,8 @@ User Tutorials
 	 - GPA for required courses : 必修科目GPA
 	 - GPA for last two years : 近兩年GPA
 	 - [中央大學GPA計算方式](http://pdc.adm.ncu.edu.tw/Form/form/form00-07t.pdf)
- - 各校GPA參考值 ( 正在開發 )
+ - **各校GPA參考值 ( 尚未開發 )**
+	 - **有任何資料或網站請麻煩多多提供了TT**
  
 #### <i class="icon-file"></i> Feedback
 
@@ -50,3 +51,8 @@ google extensions 教學 可以參考：
 [Chrome extension開發筆記](https://korprulu.blogspot.tw/2012/12/chrome-extension.html)
 
 ### Special Thanks
+
+ - [茂哥](https://github.com/shinmao)
+ - [阿奇](https://github.com/RichieCheng)
+ - [RU](https://github.com/JarvisRu)
+ - 老大
