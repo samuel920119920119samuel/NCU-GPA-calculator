@@ -42,7 +42,7 @@ var date = new Date();
 var this_semester_year = date.getFullYear()-1911-1; 
 for(var i=0; i<x.length;i++){
     var course = $('.list1').eq(i).find('td:eq(1)').text();
-    var semester_year = $('.list1').eq(i).find('td:eq(0)').text();
+    var semester_year = parseInt( ($('.list1').eq(i).find('td:eq(0)').text()) / 10);
     // information filter
     if(semester_year>(this_semester_year-2) && course!="操" && course!="勞" && !$.isNumeric(course)){
         var credit = parseInt($('.list1').eq(i).find('td:eq(3)').text());
