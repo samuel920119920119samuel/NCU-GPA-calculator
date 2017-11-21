@@ -1,6 +1,6 @@
 {
   "name": "NCU-GPA calculator",
-  "version": "0.9",
+  "version": "0.9.1",
   "description": "A GPA calculator for National Central University students.",
 
   // "browser_action": {
@@ -13,7 +13,7 @@
 
   "content_scripts": [
     {
-      "matches": ["http://www4.is.ncu.edu.tw/register/student/student_record.php"],
+      "matches": ["https://cis.ncu.edu.tw/register/student/student_record.php"],
       "js": ["jquery-3.2.1.min.js", "content_script.js"]
     }
   ],
