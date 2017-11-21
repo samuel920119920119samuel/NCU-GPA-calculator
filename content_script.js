@@ -6,8 +6,9 @@ var total_credit = 0;
 var grade_points = 0;    
 for(var i=0; i<x.length;i++){
     var course = $('.list1').eq(i).find('td:eq(1)').text();
+    var score = parseInt($('.list1').eq(i).find('td:eq(4)').text());
     // information filter
-    if(course!="操" && course!="勞" && !$.isNumeric(course)){
+    if(course!="操" && course!="勞" && !$.isNumeric(course) && $.isNumeric(score)){
         var credit = parseInt($('.list1').eq(i).find('td:eq(3)').text());
         var score = parseInt($('.list1').eq(i).find('td:eq(4)').text());            
         var point = score_to_point(score);
@@ -23,10 +24,10 @@ var total_credit = 0;
 var grade_points = 0;
 for(var i=0; i<x.length;i++){
     var course = $('.list1').eq(i).find('td:eq(1)').text();
+    var score = parseInt($('.list1').eq(i).find('td:eq(4)').text());    
     // information filter
-    if(course=="必" && course!="操" && course!="勞" && !$.isNumeric(course)){
-        var credit = parseInt($('.list1').eq(i).find('td:eq(3)').text());
-        var score = parseInt($('.list1').eq(i).find('td:eq(4)').text());            
+    if(course=="必" && course!="操" && course!="勞" && !$.isNumeric(course) && $.isNumeric(score)){
+        var credit = parseInt($('.list1').eq(i).find('td:eq(3)').text());            
         var point = score_to_point(score);
         total_credit = total_credit + credit;
         grade_points = (credit*point) + grade_points;
@@ -42,11 +43,11 @@ var date = new Date();
 var this_semester_year = date.getFullYear()-1911-1; 
 for(var i=0; i<x.length;i++){
     var course = $('.list1').eq(i).find('td:eq(1)').text();
+    var score = parseInt($('.list1').eq(i).find('td:eq(4)').text());    
     var semester_year = parseInt( ($('.list1').eq(i).find('td:eq(0)').text()) / 10);
     // information filter
-    if(semester_year>(this_semester_year-2) && course!="操" && course!="勞" && !$.isNumeric(course)){
-        var credit = parseInt($('.list1').eq(i).find('td:eq(3)').text());
-        var score = parseInt($('.list1').eq(i).find('td:eq(4)').text());            
+    if(semester_year>(this_semester_year-2) && course!="操" && course!="勞" && !$.isNumeric(course) && $.isNumeric(score)){
+        var credit = parseInt($('.list1').eq(i).find('td:eq(3)').text());            
         var point = score_to_point(score);
         total_credit = total_credit + credit;
         grade_points = (credit*point) + grade_points;
